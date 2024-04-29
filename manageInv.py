@@ -132,6 +132,43 @@ def damagedInv(dict):
 
 # This will run my main program which I test and run my code
 def run(files):
+    # Testing Variable To test out different outputs and more examples
+    test = {
+    '1': ['Apple', 'laptop', '999', '7/3/2020'],
+    '2': ['Apple', 'phone', '534', '2/1/2021'],
+    '3': ['Dell', 'laptop', '799', '7/2/2020'],
+    '4': ['Dell', 'tower', '345', '5/27/2020'],
+    '5': ['Lenovo', 'laptop', '239', '9/1/2020', 'damaged'],
+    '6': ['Lenovo', 'tower', '599', '10/1/2020'],
+    '7': ['Samsung', 'phone', '1200', '12/1/2023'],
+    '8': ['Apple', 'tablet', '399', '6/15/2022'],
+    '9': ['Dell', 'desktop', '899', '3/8/2021'],
+    '10': ['HP', 'laptop', '649', '8/20/2021'],
+    '11': ['Lenovo', 'desktop', '449', '11/5/2020'],
+    '12': ['Samsung', 'tablet', '299', '4/30/2022'],
+    '13': ['Apple', 'watch', '199', '9/12/2022'],
+    '14': ['Google', 'phone', '799', '1/7/2022'],
+    '15': ['Microsoft', 'laptop', '1199', '10/25/2021'],
+    '16': ['Sony', 'headphones', '149', '5/3/2023'],
+    '17': ['LG', 'TV', '799', '12/19/2021'],
+    '18': ['Amazon', 'Echo', '99', '2/14/2022'],
+    '19': ['Fitbit', 'fitness tracker', '129', '7/9/2023'],
+    '20': ['GoPro', 'action camera', '299', '11/21/2022'],
+    '21': ['Apple', 'laptop', '1099', '6/3/2021'],
+    '22': ['Apple', 'laptop', '1299', '9/2/2020'],
+    '23': ['Apple', 'tablet', '499', '3/14/2023'],
+    '24': ['Dell', 'laptop', '899', '5/5/2022'],
+    '25': ['Dell', 'laptop', '999', '8/17/2021'],
+    '26': ['Dell', 'desktop', '699', '10/30/2022'],
+    '27': ['Lenovo', 'desktop', '499', '4/1/2023'],
+    '28': ['Lenovo', 'desktop', '599', '6/6/2022'],
+    '29': ['Lenovo', 'laptop', '349', '2/8/2023'],
+    '30': ['Lenovo', 'laptop', '449', '12/12/2022']
+}
+
+
+
+
     # Pulling the dictionary from fullInventory since it would be under the fullInv format and sort.
     fullInv = fullInventory(fileToDict(files))
 
@@ -139,4 +176,5 @@ def run(files):
     laptopInventory(fullInv)
     pastServiceDateInv(fullInv)
     damagedInv(fullInv)
-    return fullInv
+    # Change this with test to test with other stuff
+    return test
