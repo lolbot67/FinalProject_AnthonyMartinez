@@ -6,7 +6,7 @@ This Project will deal with the whole query system that will output results depe
 on the inputs from the User. It will ignore inputs that are not found in our table/list.
 Will be using functions found on my last project.
 
-
+importing manageInv so that if any changes with file it will always work if the txt files are on the same format as part 1.
 """
 
 # Importing this so that I can get the full inventory.
@@ -83,6 +83,7 @@ def main():
         if user_input.lower() == "q":
             break
         manufacturer, item_type = inv.extract_keywords(user_input)
+        # Added these so that the output can be easily readible
         print("===========================")
         print("Manufacturer:", manufacturer)
         print("Item type:", item_type)
