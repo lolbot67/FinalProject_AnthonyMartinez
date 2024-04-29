@@ -131,8 +131,7 @@ def damagedInv(dict):
 
 
 # This will run my main program which I test and run my code
-def main():
-    files = ['ManufacturerList.txt', 'PriceList.txt', 'ServiceDatesList.txt']
+def run(files):
     # Pulling the dictionary from fullInventory since it would be under the fullInv format and sort.
     fullInv = fullInventory(fileToDict(files))
 
@@ -140,7 +139,4 @@ def main():
     laptopInventory(fullInv)
     pastServiceDateInv(fullInv)
     damagedInv(fullInv)
-
-
-if __name__ == "__main__":
-    main()
+    return fullInv
